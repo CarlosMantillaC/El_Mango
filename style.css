@@ -1,0 +1,287 @@
+@import url('https://fonts.cdnfonts.com/css/inter');
+
+:root {
+    --primary: #1F222B;
+    --secondary: #2C43C7;
+    --tertiary: #F8F8F8;
+    --quaternary: #232323;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+html,
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+div {
+    display: flex;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.background-upper {
+    background-color: var(--primary);
+    height: 720px;
+}
+
+.background-bottom {
+    background-color: #FFFFFF;
+}
+
+main {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    margin: 60px 80px;
+    width: 85%;
+}
+
+.container-gallery {
+    background-color: var(--primary);
+    height: 600px;
+}
+
+.container-content {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--tertiary);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container-card-information {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.card-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em 4em;
+    gap: 1em;
+    border-right:  1px solid rgba(0, 0, 0, 0.2);
+    border-bottom:  1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+.card-information-final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em 4em;
+    gap: 1em;
+}
+
+.card-information-icon,
+.card-information-title,
+.card-information-description {
+    display: flex;
+    justify-content: center;
+}
+
+.card-information-icon i {
+    font-size: 2em;
+}
+
+.card-information-title h3,
+.card-information-description {
+    text-align: center;
+}
+
+.container-daily-deal {
+    display: grid; /* Activamos el grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+    grid-template-rows: 1fr; /* Una fila */
+    width: 100%;
+    height: 100%;
+    align-items: center; /* Centramos el contenido verticalmente */
+}
+
+.day-deal-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 1em;
+}
+
+.day-deal-information>div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em; /* Ajustamos el espacio */
+    width: 80%; /* Ajustamos ancho */
+}
+
+.daily-deal-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Oculta cualquier exceso */
+    width: 100%;
+    height: auto;
+}
+
+.daily-deal-image img {
+    max-width: 100%; /* Se ajusta al tamaño máximo del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: contain; /* Se asegura de que la imagen permanezca contenida */
+}
+
+.day-deal-information-title {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.day-deal-information-product {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.day-deal-information-product-description {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.day-deal-information-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.2em;
+}
+
+.day-deal-information-price div:first-child {
+    color: var(--secondary);
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.day-deal-information-price div:last-child {
+    color: var(--quaternary);
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: line-through;
+}
+
+.day-deal-information-counter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas iguales */
+    gap: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1em;
+}
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    padding: 1.5em 2em;
+    background-color: var(--background-light); /* Color de fondo para destacar */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.counter div:first-child {
+    font-size: 1.8em;
+    color: var(--primary);
+}
+
+.counter div:last-child {
+    font-size: 1em;
+    color: var(--secondary);
+}
+
+
+
+
+.container-popular-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.rated {
+    grid-column: 3 / span 2;
+}
+
+
+
+.shoe-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 40px;
+    border-right:  1px solid rgba(0, 0, 0, 0.2);
+    border-top:  1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.shoe-card-final {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+.shoe-card .title {
+    font-weight: 700;
+    margin-top: 24px;
+}
+
+.shoe-card .price {
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+
+.popular-products-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background-color: var(--primary);
+}
+
+.popular-products-card .title {
+    color: var(--tertiary);
+    font-weight: 700;
+}
+
+.popular-products-card .description {
+    color: var(--tertiary);
+    font-weight: 500;
+}
+
+.popular-products-card a {
+    margin-top: 24px;
+    color: var(--tertiary);
+    text-decoration: none;
+}
+
+
+.popular-products-card .icon-container i {
+    color: var(--secondary);
+    padding: 8px;
+    font-size: 2em;
+    border: 4px dotted var(--secondary);
+    border-radius: 25px;
+}
