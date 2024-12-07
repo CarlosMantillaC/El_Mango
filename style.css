@@ -30,7 +30,7 @@ div {
 }
 
 .background-upper {
-    background-color: #0E1716;
+    background-color: black;
     height: 720px;
 }
 
@@ -43,7 +43,7 @@ div {
     position: absolute;
     width: 100%; /* Extiende el menú al ancho de la pantalla */
     top: 0;
-    background-color: #0E1716; /* Fondo del menú */
+    background-color: black; /* Fondo del menú */
     z-index: 10; /* Asegura que esté sobre otros elementos */
 }
 
@@ -76,7 +76,27 @@ main {
 .container-gallery {
     background-color: red;
     height: 600px;
+    position: relative;
+
 }
+
+
+.image-container-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.image-container-gallery img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
 
 .container-content {
     display: flex;
