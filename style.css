@@ -30,8 +30,34 @@ div {
 }
 
 .background-upper {
-    background-color: var(--primary);
+    background-color: #0E1716;
     height: 720px;
+}
+
+.linear-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Espacio entre los iconos */
+    padding: 20px 0;
+    position: absolute;
+    width: 100%; /* Extiende el menú al ancho de la pantalla */
+    top: 0;
+    background-color: #0E1716; /* Fondo del menú */
+    z-index: 10; /* Asegura que esté sobre otros elementos */
+}
+
+.linear-menu a {
+    text-decoration: none;
+    color: white; /* Color de los iconos */
+    font-size: 1.5rem; /* Tamaño de los iconos */
+    padding: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.linear-menu a:hover {
+    color: var(--secondary);
+    transform: scale(1.2); 
 }
 
 .background-bottom {
@@ -48,7 +74,7 @@ main {
 }
 
 .container-gallery {
-    background-color: var(--primary);
+    background-color: red;
     height: 600px;
 }
 
