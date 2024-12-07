@@ -284,7 +284,8 @@ main {
 
 
 .rated {
-    grid-column: span 2; /* Hace que el elemento ocupe dos columnas */
+    grid-column: span 2;
+    position: relative; /* Establece un marco de referencia para posicionar elementos absolutos */
 }
 
 .image-rated {
@@ -294,9 +295,28 @@ main {
     overflow: hidden;
     width: 100%;
     height: 310px;
-    
+    position: relative;
 }
 
 .image-rated img {
-    object-fit: contain; /* Escala la imagen para ajustarse sin recortar */
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
+.image-rated .more-info-link {
+    position: absolute;
+    bottom: 15px;
+    right: 4%;
+    background-color: var(--quaternary);
+    color: #fff;
+    padding: 16px 16px;
+    border-radius: 32px;
+    text-decoration: none;
+    font-size: 1em;
+    z-index: 1;
+}
+
+.image-rated .more-info-link:hover {
+    background-color: rgba(0, 0, 0, 0.9);
 }
