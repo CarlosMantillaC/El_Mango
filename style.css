@@ -38,26 +38,26 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px; /* Espacio entre los iconos */
+    gap: 40px;
     padding: 20px 0;
     position: absolute;
-    width: 100%; /* Extiende el menú al ancho de la pantalla */
+    width: 100%;
     top: 0;
-    background-color: black; /* Fondo del menú */
-    z-index: 10; /* Asegura que esté sobre otros elementos */
+    background-color: black;
+    z-index: 10;
 }
 
 .linear-menu a {
     text-decoration: none;
-    color: white; /* Color de los iconos */
-    font-size: 1.5rem; /* Tamaño de los iconos */
+    color: white;
+    font-size: 1.5rem;
     padding: 10px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .linear-menu a:hover {
     color: var(--secondary);
-    transform: scale(1.2); 
+    transform: scale(1.2);
 }
 
 .background-bottom {
@@ -74,7 +74,7 @@ main {
 }
 
 .container-gallery {
-    background-color: red;
+    background-color: black;
     height: 600px;
     position: relative;
 
@@ -116,8 +116,8 @@ main {
     justify-content: center;
     padding: 2em 4em;
     gap: 1em;
-    border-right:  1px solid rgba(0, 0, 0, 0.2);
-    border-bottom:  1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
 }
 
@@ -163,7 +163,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
-    width: 80%; 
+    width: 80%;
 }
 
 .daily-deal-image {
@@ -260,8 +260,8 @@ main {
     flex-direction: column;
     gap: 8px;
     padding: 40px;
-    border-right:  1px solid rgba(0, 0, 0, 0.2);
-    border-top:  1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -331,7 +331,7 @@ main {
 
 .rated {
     grid-column: span 2;
-    position: relative; /* Establece un marco de referencia para posicionar elementos absolutos */
+    position: relative;
 }
 
 .image-rated {
@@ -365,4 +365,44 @@ main {
 
 .image-rated .more-info-link:hover {
     background-color: rgba(0, 0, 0, 0.9);
+}
+
+.footer {
+    background: #000;
+    padding: 30px 10px;
+    text-align: center;
+}
+
+.footer .row {
+    width: auto;
+    margin: 1% 10%;
+    padding: 0.6% 0%;
+    color: gray;
+    font-size: 0.8em;
+    
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+.footer .row a:hover {
+    color: #fff;
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 8px 30px;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+    padding: 10px;
 }
